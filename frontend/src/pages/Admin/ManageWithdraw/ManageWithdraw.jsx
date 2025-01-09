@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from "react"
 import ManageWithdrawTable from "../../../components/Tables/ManageWithdrawTable"
 import { getWithdrawal } from '../../../services/Admin/apiServiceAdmin'

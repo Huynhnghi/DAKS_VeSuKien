@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect, useState } from "react";
 import { getUploadWallet, postInfoOrganizer } from "../../services/apiService";
 import OrganizerSetup from '../../components/Organizer/OrganizerSetup';

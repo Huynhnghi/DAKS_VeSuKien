@@ -1,3 +1,4 @@
+import React from 'react';
 
 function OrganizerCard(props) {
     const { organizer } = props;

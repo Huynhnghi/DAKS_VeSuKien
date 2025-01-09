@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import dayjs from 'dayjs';
@@ -5,7 +6,7 @@ import TicketTable from '../../components/Tables/TicketTable';
 import { getEventDetail } from '../../services/apiService'
 import CarouselItems from '../../components/Carousel/CarouselItems';
 import OrganizerCard from '../../components/Organizer/OrganizerCard';
-
+import Breadcrumbs from '../../components/BreadCrumbs/BreadCrumbs';
 
 function EventDetail() {
   const slug = useParams();
@@ -25,6 +26,7 @@ function EventDetail() {
 
   return (
     <div>
+      <Breadcrumbs />
       <div className='h-[60vh]'>
         <div className='d-flex w-[100%] h-[60vh] justify-center items-center '>
           <div className="rounded-3xl w-[700px] h-[400px]">

@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Button, Modal, Col, Form, Row } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
@@ -66,7 +67,7 @@ function ModalUpdateEvent({ show, setShow, event }) {
           previews: [...(prevData.previews || []), reader.result],
         }));
       };
-      reader.readAsDataURL(file); 
+      reader.readAsDataURL(file);
     }
   };
   const handleAddTicketType = () => {
@@ -150,7 +151,7 @@ function ModalUpdateEvent({ show, setShow, event }) {
                   <p>No image available</p>
                 )}
 
-             
+
               </div>
               {/* <div className="form-control rounded-xl min-h-60 h-auto">
                 <label>Ảnh bìa sự kiện: </label>

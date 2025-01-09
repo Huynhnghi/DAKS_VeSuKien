@@ -1,11 +1,12 @@
+import React from 'react';
 import PropTypes from 'prop-types'
 import { Table, Button } from 'react-bootstrap';
 
 function ManageUserTable(props) {
     const { userList } = props;
-    
+
     const handleChangeStatus = () => {
-    
+
     }
 
     const handleModalRemove = () => {

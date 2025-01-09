@@ -1,4 +1,5 @@
 
+import React from 'react';
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import App from '../App.jsx'
 import About from "../pages/About/index.jsx";
@@ -79,7 +80,7 @@ const router = createBrowserRouter([
                         path: 'create-event',
                         element: <CreateEvent />
                     },
-                    
+
 
                 ],
             },
@@ -107,7 +108,7 @@ const router = createBrowserRouter([
                         element: <ManageStatistics />
                     },
 
-                    
+
 
                 ],
             },

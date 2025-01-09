@@ -1,9 +1,10 @@
+import React from "react";
 import { Outlet } from "react-router-dom"
 import NavbarOriganizer from "../../components/Navbar/NavbarOrganizer"
 
-
 function Organizer() {
     return (
+
         <div className="d-flex ">
             <div className="w-[320px]">
                 <NavbarOriganizer />

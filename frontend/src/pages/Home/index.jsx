@@ -1,3 +1,4 @@
+import React from 'react';
 import BtnSeeMore from "../../components/Button/BtnSeeMore"
 import CarouselItems from "../../components/Carousel/CarouselItems"
 import HomeCarousel from "../../components/Carousel/HomeCarousel"

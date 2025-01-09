@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from "react"
 import { getEventCate } from "../../services/apiService";
 import { InputLabel, MenuItem, FormControl, Select } from '@mui/material';
@@ -6,7 +7,7 @@ import PropTypes from "prop-types";
 function FilterCateEvent(props) {
     const { eventCate, setEventCate } = props;
     const [cateList, setCateList] = useState([]);
-    
+
     const fetchCateEvent = async () => {
         const res = await getEventCate();
         setCateList(res.data.data);

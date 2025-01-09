@@ -1,3 +1,5 @@
+
+import React from 'react';
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { getEventCate } from '../../services/apiService';
@@ -11,6 +13,7 @@ function CarouselItems() {
         const fetchEventCate = async () => {
             try {
                 const res = await getEventCate();
+                console.log(res);
                 if (res?.data?.data) {
                     setListCates((prevList) => [...prevList, ...res.data.data]);
                 }
@@ -31,7 +34,7 @@ function CarouselItems() {
             modules={[Pagination, Navigation]}
             className="mySwiper"
         >
-            {listCates && listCates.length > 0 && listCates.map((cate,index) => (
+            {listCates && listCates.length > 0 && listCates.map((cate, index) => (
                 <SwiperSlide key={index} >
                     <Link to='/events' state={{ cate }}>
                         <div className="relative duration-500 hover:scale-105 group">

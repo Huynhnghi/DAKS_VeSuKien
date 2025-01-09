@@ -1,3 +1,4 @@
+import React from 'react';
 import { Table, Button } from 'react-bootstrap';
 
 function ManageWithdrawTable(props) {
@@ -32,7 +33,7 @@ function ManageWithdrawTable(props) {
                                     <option value="paid" selected={item.status === "paid"}>Đã thanh toán</option>
                                 </select>
                             </td> */}
-                            <td  className={`${item.status === "pending" ? ' text-danger' : 'text-primary'}`} >
+                            <td className={`${item.status === "pending" ? ' text-danger' : 'text-primary'}`} >
                                 {item.status === "pending" ? 'Chưa thanh toán' : 'Đã thanh toán'}
                             </td>
                             {item.status === "pending" &&

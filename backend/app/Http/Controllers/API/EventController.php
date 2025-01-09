@@ -121,7 +121,7 @@ class EventController extends Controller
                     $imagePath = $image->store('events', 'public');
                     EventImage::create([
                         'event_id' => $event->id,
-                        'image_url' => '/storage/' . $imagePath,
+                        'image_url' => '/storage/app/public' . $imagePath,
                     ]);
                 }
             }

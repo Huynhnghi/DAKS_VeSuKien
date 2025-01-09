@@ -1,3 +1,5 @@
+
+import React from 'react';
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -24,7 +26,7 @@ function Header() {
 
     const handleCloseLogin = () => setShowLogin(false);
     const handleShowLogin = () => setShowLogin(true);
-    
+
     const handleShowSigUp = () => setShowSignUp(true);
     const handleCloseSignUp = () => setShowSignUp(false);
 
@@ -127,7 +129,7 @@ function Header() {
                 </div>
             </div>
 
-            <ModalSignUp show={showSignUp} handleShow={handleShowSigUp} handleClose={handleCloseSignUp}/>
+            <ModalSignUp show={showSignUp} handleShow={handleShowSigUp} handleClose={handleCloseSignUp} />
             <ModalLogin show={showLogin} handleShow={handleShowLogin} handleClose={handleCloseLogin} />
         </header >
     );

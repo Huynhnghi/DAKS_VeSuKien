@@ -1,3 +1,4 @@
+import React from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import { deleteEvent } from '../../services/Admin/apiServiceAdmin';
 import { toast } from 'react-toastify';

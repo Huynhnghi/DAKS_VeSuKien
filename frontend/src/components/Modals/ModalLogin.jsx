@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { Modal, Form, Button } from 'react-bootstrap';
@@ -30,18 +31,18 @@ function ModalLogin(props) {
                 toast.success(res.data.message);
                 dispatch(loginSuccess(res.data))
                 handleClose();
-            }else{
+            } else {
                 toast.error(res.data.message);
             }
         } catch (error) {
             toast.error('Đăng nhập thất bại' + error.message);
-           
+
         }
     }
 
     return (
         <div>
-           
+
             <Modal
                 show={show}
                 onHide={handleClose}

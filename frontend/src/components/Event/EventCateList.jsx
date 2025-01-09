@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { getEventCate } from '../../services/apiService';
@@ -30,7 +31,7 @@ function EventCateList(props) {
     )
 }
 
-EventCateList.propTypes  = {
-    handleInputChange : PropTypes.func
+EventCateList.propTypes = {
+    handleInputChange: PropTypes.func
 }
 export default EventCateList

@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './event_component.scss'
@@ -13,7 +13,7 @@ function EventsListCard_2(props) {
             {events != null}{
                 events.map((event, index) => (
                     <Link to={`/event-detail/${event?.slug}`} key={index} className='w-[22%]' >
-                        <EventCard event={event}  />
+                        <EventCard event={event} />
                     </Link>
 
                 ))

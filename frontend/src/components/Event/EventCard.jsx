@@ -1,10 +1,11 @@
+import React from 'react';
 import dayjs from 'dayjs';
 import PropTypes from 'prop-types';
 import { formatPrice } from '../../assets/js/main.js';
 
 function EventCard(props) {
     const { event } = props;
-    
+
     return (
         <div
             key={event.id}
@@ -27,7 +28,7 @@ function EventCard(props) {
                         <span className="text-gray-400">-</span>
                         <span className="font-medium">{dayjs(event?.time_end).format('HH:mm')}</span>
                     </div>
-                        
+
                 </div>
                 <p className="m-0 text-lg">Giá từ: {formatPrice(event?.ticket_type[0].price)}</p>
             </div>

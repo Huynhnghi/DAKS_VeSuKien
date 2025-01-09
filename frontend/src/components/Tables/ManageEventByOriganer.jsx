@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 import { Table, Button } from 'react-bootstrap';
 import PropTypes from 'prop-types'
@@ -34,7 +35,7 @@ function ManageEventTable(props) {
                 const updatedEventList = eventList.map((item) =>
                     item.id === event.id ? { ...item, status: selectedStatus } : item
                 );
-                handleFetchEvent(updatedEventList); 
+                handleFetchEvent(updatedEventList);
             }
         } catch (error) {
             toast.error('Chưa thể cập nhật! Kiểm tra lại' + error);

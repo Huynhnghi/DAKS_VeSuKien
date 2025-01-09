@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 import { InputLabel, MenuItem, FormControl, Select } from '@mui/material';
 import { getLocation } from '../../services/apiService';

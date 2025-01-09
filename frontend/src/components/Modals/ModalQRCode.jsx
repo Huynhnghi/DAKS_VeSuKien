@@ -1,4 +1,5 @@
-import { useState,useEffect } from 'react';
+import React from 'react';
+import { useState, useEffect } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import PropTypes from 'prop-types'
 

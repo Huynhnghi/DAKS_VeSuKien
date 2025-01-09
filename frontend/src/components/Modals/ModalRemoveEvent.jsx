@@ -1,15 +1,16 @@
+import React from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import { deleteEvent } from '../../services/Admin/apiServiceAdmin';
 import { toast } from 'react-toastify';
 import PropTypes from 'prop-types'
 
 function ModalRemoveEvent(props) {
-  const { show, setShow, event,handleDeleteEvent } = props;
+  const { show, setShow, event, handleDeleteEvent } = props;
 
   const handleClose = () => {
     setShow(!show);
   }
-  
+
   const fetchRemoveEvent = async () => {
     const res = await deleteEvent(event.id);
     if (res.data.status === 'success') {
